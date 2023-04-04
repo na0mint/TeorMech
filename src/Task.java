@@ -45,7 +45,6 @@ public interface Task {
 
     default void getAnswer() {
         init();
-
         data.forEach((String key, Double value) -> data.put(key, compute(key)));
     }
 }
